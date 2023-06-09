@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CanonTower : Tower
 {
-    private void Awake()
+    protected override void Awake()
     {
         data = GameManager.Resource.Load<TowerData>("Data/CanonTowerData");
     }
